@@ -1,4 +1,4 @@
-projecteuler.com
+projecteuler.net
 ===============
 
 坚持每天做一题！
