@@ -2,17 +2,18 @@
 #!/usr/bin/python
 #python2.7.8
 
-import datetime
 
-
-starttime = datetime.datetime.now()
 '''
 Tn=n(n+1)/2
 Pn=n(3n-1)/2
 Hn=n(2n-1)
 T285=P165=H143
-
 '''
+
+import datetime
+
+starttime = datetime.datetime.now()
+
 flag = False
 
 n=144
