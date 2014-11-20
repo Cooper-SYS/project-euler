@@ -27,9 +27,6 @@ while n<maxBase:
             break
     n+=1
 
-
-    
-
 priLen=len(priArr)
 maxLength=priLen
 length=priLen-1 
