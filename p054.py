@@ -7,7 +7,7 @@ import math
 
 starttime = datetime.datetime.now()
 
-    
+#just test    
 def transPoker(player):
     pld=[]
     plf=False
