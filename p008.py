@@ -26,17 +26,18 @@ st='73167176531330624919225119674426574742355349194934\
 71636269561882670428252483600823257530420752963450'
 
 max=1
+maxString=''
 
-for x in range(0,len(st)-5):
-    a=int(st[x:x+1])
-    b=int(st[x+1:x+2])
-    c=int(st[x+2:x+3])
-    d=int(st[x+3:x+4])
-    e=int(st[x+4:x+5])
-    num=a*b*c*d*e
-    #print '%d*%d*%d*%d*%d=%d' % (a,b,c,e,e,num)
-    if num>max:
-        max=num
-        
+for x in range(0,len(st)-12):
+    num=1
+    string=''
+    for addIdx in range(0,13):
+        num =num * int(st[x+addIdx])
+        string = string + st[x+addIdx]
+        if num>max:
+            max=num
+            maxString=string
 print max
+print maxString
+
     
