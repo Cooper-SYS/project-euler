@@ -1,8 +1,9 @@
-'''
-Created on 2013-8-13
+# coding:utf-8
+from Euler import Euler
+edu = Euler()
 
-@author: zhaoliang
-'''
+ts0 = edu.time()
+
 import time
 start=time.time()
 count=0
@@ -30,4 +31,4 @@ for p200 in range(0,2):
 
 
 print count           
-print time.time()-start
+print (edu.time()-ts0)

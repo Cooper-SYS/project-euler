@@ -1,10 +1,9 @@
-#! D:/Python27/python.exe
 # coding:utf-8
-'''
-Created on 2013年8月13日
+from Euler import Euler
+edu = Euler()
 
-@author: Administrator
-'''
+ts0 = edu.time()
+
 from math import sqrt
 import time
 def isPrime(num):
@@ -35,4 +34,4 @@ for x in list:
         count+=1
     
 print count
-print time.time()-start
+print (edu.time()-ts0)

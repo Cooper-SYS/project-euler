@@ -1,9 +1,9 @@
 # coding:utf-8
-'''
-Created on 2013-8-13
+from Euler import Euler
+edu = Euler()
 
-@author: zhaoliang
-'''
+ts0 = edu.time()
+
 list=[]
 for x in range(0,10):
     list.append(x**5)
@@ -25,3 +25,5 @@ for a in range(0,len(list)):
                             print list[a]+list[b]+list[c]+list[d]+list[e]+list[f]
                         
 print count
+
+print (edu.time()-ts0)

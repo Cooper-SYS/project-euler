@@ -1,8 +1,9 @@
-'''
-Created on 2013-8-8
+# coding:utf-8
+from Euler import Euler
+edu = Euler()
 
-@author: zhaoliang
-'''
+ts0 = edu.time()
+
 from math import sqrt
 import time
 def divi(number):
@@ -38,4 +39,4 @@ for x in range(0,len(arr)):
             break
         
 print sum(x for x in arr2)
-print time.time()-start
+print (edu.time()-ts0)

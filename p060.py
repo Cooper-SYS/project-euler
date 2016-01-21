@@ -1,6 +1,9 @@
-#coding=utf-8
-#!/usr/bin/python
-#python2.7.8
+# coding:utf-8
+from Euler import Euler
+edu = Euler()
+
+ts0 = edu.time()
+
 #有一个假定是替换的位数是3位，并且正好是全部替换，觉得不是太合理，但有可能是数学问题就不深究了
 import datetime
 import math
@@ -56,6 +59,6 @@ for x in ls:
 print sum
 
 
-print('All spent '+str((datetime.datetime.now()-starttime).seconds)+' seconds') 
+print (edu.time()-ts0)
 
 

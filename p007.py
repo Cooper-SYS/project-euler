@@ -1,12 +1,11 @@
 # coding:utf-8
-'''
-Created on 2013-8-7
-
-@author: zhaoliang
-'''
+from Euler import Euler
 from math import sqrt
-import time
-start=time.time()
+
+edu = Euler()
+ts0 = edu.time()
+
+
 sushu=[2,3,5,7,11,13,17]
 max=19
 print sushu
@@ -22,5 +21,7 @@ while len(sushu)<10001:
     max+=1
 
 print sushu[len(sushu)-1]
-print time.time()-start
+
+
+print (edu.time()-ts0)
         

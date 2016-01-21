@@ -1,4 +1,9 @@
 # coding:utf-8
+from Euler import Euler
+edu = Euler()
+
+ts0 = edu.time()
+
 '''
 Created on 2013-8-8
 1901年1月1日是星期二
@@ -26,3 +31,4 @@ for year in range(1901,2001):
             times+=1
             
 print times
+print (edu.time()-ts0)

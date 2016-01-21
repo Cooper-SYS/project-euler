@@ -1,11 +1,13 @@
-#coding=utf-8
-#!/usr/bin/python
-#python2.7.8
-
+# coding:utf-8
+from Euler import Euler
 import os
 from hashlib import sha256
 from hmac import HMAC
 import base64
+
+
+edu = Euler()
+
 
 '''
 先随机生成 64 bits 的 salt，再选择 SHA-256 算法使用 HMAC 对密码和 salt 进行 10 次叠代混淆，最后将 salt 和 hash 结果一起返回。

@@ -1,6 +1,9 @@
-#coding=utf-8
-#!/usr/bin/python
-#python2.7.8
+# coding:utf-8
+from Euler import Euler
+edu = Euler()
+
+ts0 = edu.time()
+
 
 import datetime
 import math
@@ -134,6 +137,6 @@ if digits:
     print int(digits[1:5])+int(digits[7:11])+int(digits[13:17])+int(digits[19:23])+int(digits[25:29])+int(digits[31:35])
             
             
-print('All spent '+str((datetime.datetime.now()-starttime).seconds)+' seconds') 
+print (edu.time()-ts0)
 
 

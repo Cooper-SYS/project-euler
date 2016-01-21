@@ -1,9 +1,9 @@
 # coding:utf-8
-'''
-Created on 2013-8-12
+from Euler import Euler
+edu = Euler()
 
-@author: zhaoliang
-'''
+ts0 = edu.time()
+
 from math import sqrt
 import time
 ka=1
@@ -36,4 +36,4 @@ for a in range(-1000,1001):
             
 print 'n*n+n*%d+%d     n(%d,%d)' % (ka,kb,0,max)   
 print ka*kb    
-print time.time()-start
+print (edu.time()-ts0)

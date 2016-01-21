@@ -1,9 +1,9 @@
 # coding:utf-8
-'''
-Created on 2013-8-14
+from Euler import Euler
+edu = Euler()
 
-@author: zhaoliang
-'''
+ts0 = edu.time()
+
 from math import sqrt
 import time
 def isbestPrime(num):
@@ -45,4 +45,4 @@ while times<11:
     number+=2
     
 print count    
-print time.time()-start
+print (edu.time()-ts0)

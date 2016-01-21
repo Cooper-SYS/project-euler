@@ -1,9 +1,9 @@
 # coding:utf-8
-'''
-Created on 2013-8-14
+from Euler import Euler
+edu = Euler()
 
-@author: zhaoliang
-'''
+ts0 = edu.time()
+
 import time
 from math import sqrt
 start= time.time()
@@ -23,5 +23,4 @@ for all in xrange(12,1000):
         number=all
         
 print number
-print times
-print time.time()-start            
+print (edu.time()-ts0)          

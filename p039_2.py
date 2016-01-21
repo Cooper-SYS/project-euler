@@ -1,4 +1,9 @@
 # coding:utf-8
+from Euler import Euler
+edu = Euler()
+
+ts0 = edu.time()
+
 '''
 Created on 2013-8-14
 这是别人的程序，我没太看懂
@@ -28,3 +33,4 @@ def f(m):
     print s, 'in', time.time()-then, 'seconds'
     
 f(1001)
+print (edu.time()-ts0)

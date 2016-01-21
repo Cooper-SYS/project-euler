@@ -1,9 +1,9 @@
 # coding:utf-8
-'''
-Created on 2013-8-8
+from Euler import Euler
+edu = Euler()
 
-@author: zhaoliang
-'''
+ts0 = edu.time()
+
 import time
 start=time.time()
 number=0
@@ -24,3 +24,4 @@ for x in range(1000000,13,-1):
         
 print str(number)+':'+str(count)
 print time.time()-start
+print (edu.time()-ts0)

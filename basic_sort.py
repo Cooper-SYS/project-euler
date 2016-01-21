@@ -1,8 +1,4 @@
 #coding=utf-8
-#!/usr/bin/python
-#python2.7.8
-
-
 #73162890 by hand
 import datetime
 import math

@@ -1,6 +1,9 @@
-#coding=utf-8
-#!/usr/bin/python
-#python2.7.8
+# coding:utf-8
+from Euler import Euler
+edu = Euler()
+
+ts0 = edu.time()
+
 
 import datetime
 import math
@@ -14,6 +17,5 @@ def PE97(a, b, c, m):
 print "last 10 digits = %010d" % PE97(2, 7830457, 28433, 10**10)
             
 
-endtime = datetime.datetime.now()
-print('All spent '+str((endtime-starttime).seconds)+' seconds')
+print (edu.time()-ts0)
 

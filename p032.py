@@ -1,4 +1,9 @@
 # coding:utf-8
+from Euler import Euler
+edu = Euler()
+
+ts0 = edu.time()
+
 '''
 Created on 2013-8-13
 稍加分析可只该数肯定是个 4 位数
@@ -34,4 +39,4 @@ for x in result:
     count+=x
     
 print '************%d****************' % count
-print time.time()-start
+print (edu.time()-ts0)

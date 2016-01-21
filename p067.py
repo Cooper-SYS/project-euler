@@ -1,9 +1,9 @@
 # coding:utf-8
-'''
-Created on 2013-8-8
+from Euler import Euler
+edu = Euler()
 
-@author: zhaoliang
-'''
+ts0 = edu.time()
+
 list=[]
 filename='p067_triangle.txt'
 file=open(filename,'r')
@@ -21,4 +21,8 @@ for x in range(len(list)-1,0,-1):
         else:
             list[x-1][y-1]=list[x-1][y-1]+list[x][y-1]
 
+            
 print list[0]
+
+
+print (edu.time()-ts0)

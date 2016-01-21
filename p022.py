@@ -1,9 +1,9 @@
 # coding:utf-8
-'''
-Created on 2013-8-8
+from Euler import Euler
+edu = Euler()
 
-@author: zhaoliang
-'''
+ts0 = edu.time()
+
 list=[]
 filename='p022_names.txt'
 file=open(filename,'r')
@@ -22,6 +22,6 @@ for x in range(0,len(list)):
     count+=(sum*(x+1))
     
 print count
-
+print (edu.time()-ts0)
 
 

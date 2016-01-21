@@ -1,19 +1,21 @@
 # coding:utf-8
-'''
-Created on 2013-8-7
+from Euler import Euler
+edu = Euler()
 
-@author: zhaoliang
-'''
-def a():
+ts0 = edu.time()
+
+def p006_1():
     sum=0
     for x in range(1,101):
         sum+=x**2
     return sum
 
-def b():
+def p006_2():
     sum=0
     for x in range(1,101):
         sum+=x
     return sum**2
 
-print a()-b()
+print p006_1()-p006_2()
+
+print (edu.time()-ts0)

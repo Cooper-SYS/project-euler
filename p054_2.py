@@ -1,3 +1,9 @@
+# coding:utf-8
+from Euler import Euler
+edu = Euler()
+
+ts0 = edu.time()
+
 #054 poker second try
 nums=('0','1','2','3','4','5','6','7','8','9','T','J','Q','K','A')
 count=0
@@ -75,3 +81,6 @@ for line in f:
         scount.append(0)
 print count
 print scount
+
+
+print (edu.time()-ts0)

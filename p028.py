@@ -1,9 +1,9 @@
 # coding:utf-8
-'''
-Created on 2013-8-12
+from Euler import Euler
+edu = Euler()
 
-@author: zhaoliang
-'''
+ts0 = edu.time()
+
 import time
 start=time.time()
 max=1001
@@ -50,4 +50,4 @@ for x in range(0,max) :
     index+=1
  
 print number
-print time.time()-start
+print (edu.time()-ts0)

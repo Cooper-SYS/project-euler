@@ -1,10 +1,9 @@
 # coding:utf-8
-'''
-Created on 2013-8-7
+from Euler import Euler
+edu = Euler()
 
-@author: zhaoliang
-'''
-def test():
+ts0 = edu.time()
+def p004():
     ret=0
     for x in range(100,1000):
         for y in range(100,1000):
@@ -17,4 +16,5 @@ def test():
                 
     return ret
 
-print test()
+print p004()
+print (edu.time()-ts0)

@@ -1,14 +1,15 @@
 # coding:utf-8
-'''
-Created on 2013-8-7
+from Euler import Euler
+edu = Euler()
 
-@author: zhaoliang
-'''
+ts0 = edu.time()
+
 x=1
 y=2
 sum=2
 max=4000000
-def test():
+
+def p002():
     global x,y,sum,max
     if x+y<max:
         tmp=x+y
@@ -16,7 +17,8 @@ def test():
             sum+=tmp
         x=y
         y=tmp
-        test()
+        p002()
 
-test()
+p002()
 print sum
+print edu.time()-ts0

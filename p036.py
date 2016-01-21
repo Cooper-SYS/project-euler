@@ -1,9 +1,9 @@
 # coding:utf-8
-'''
-Created on 2013-8-14
+from Euler import Euler
+edu = Euler()
 
-@author: zhaoliang
-'''
+ts0 = edu.time()
+
 import time
 
 def tobin(num):
@@ -24,4 +24,4 @@ for x in range(1,1000001):
         count+=x
         
 print count
-print time.time()-start
+print (edu.time()-ts0)

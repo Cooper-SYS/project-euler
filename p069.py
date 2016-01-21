@@ -1,6 +1,9 @@
-#coding=utf-8
-#!/usr/bin/python
-#python2.7.8
+# coding:utf-8
+from Euler import Euler
+edu = Euler()
+
+ts0 = edu.time()
+
 from __future__ import division
 import datetime
 import math
@@ -80,5 +83,4 @@ print '--------------------------------'
 print '--------------------------------' 
 print tryWay(10**6)
 print '--------------------------------' 
-endtime = datetime.datetime.now()
-print('All spent '+str((endtime-starttime).seconds)+' seconds')
+print (edu.time()-ts0)

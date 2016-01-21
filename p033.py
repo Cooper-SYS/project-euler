@@ -1,9 +1,9 @@
 # coding:utf-8
-'''
-Created on 2013-8-13
+from Euler import Euler
+edu = Euler()
 
-@author: zhaoliang
-'''
+ts0 = edu.time()
+
 fenzi=1
 fenmu=1
 def func(x,y):
@@ -43,3 +43,4 @@ for x in range(10,98):
         
 print fenzi
 print fenmu
+print (edu.time()-ts0)

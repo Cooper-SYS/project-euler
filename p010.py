@@ -1,29 +1,21 @@
 # coding:utf-8
-'''
-Created on 2013-8-7
+from Euler import Euler
+edu = Euler()
 
-@author: zhaoliang
-'''
-from math import sqrt
-import time
-start=time.time()
-sushu=[2,3,5,7,11,13,17]
-max=19
-print sushu
-while max<2000000:
-    flag=True
-    for x in range(2,int(sqrt(max))+1):
-        if max%x==0:
-            flag=False
-            break
-    if flag:
-        sushu.append(max)    
-        print sushu[len(sushu)-1]
-    max+=1
+ts0 = edu.time()
 
-num=0
-for x in sushu:
-    num+=x
-print num
-#print sushu[len(sushu)-1]
-print time.time()-start
+
+def p010():
+    sum = 2
+    min = 3 
+    max = 2000000
+    i = min
+    for i in range(min,max,2):
+        if edu.isPrime(i):sum+=i
+    return sum
+
+
+    
+print p010()
+
+print (edu.time()-ts0)

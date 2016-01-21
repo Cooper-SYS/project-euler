@@ -1,6 +1,9 @@
-#coding=utf-8
-#!/usr/bin/python
-#python2.7.8
+# coding:utf-8
+from Euler import Euler
+edu = Euler()
+
+ts0 = edu.time()
+
 '''
 电脑上的每个字符都有一个唯一编码，通用的标准是ASCII (American Standard Code for Information Interchange 美国信息交换标准编码)。
 例如大写A = 65， 星号(*) = 42，小写k = 107。
@@ -55,7 +58,6 @@ if flag:
 else:
     print 'no answer'
     
-endtime = datetime.datetime.now()
-print('All spent '+str((endtime-starttime).seconds)+' seconds')
+print (edu.time()-ts0)
 
 

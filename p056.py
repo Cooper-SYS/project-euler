@@ -1,6 +1,9 @@
-#coding=utf-8
-#!/usr/bin/python
-#python2.7.8
+# coding:utf-8
+from Euler import Euler
+edu = Euler()
+
+ts0 = edu.time()
+
 
 import datetime
 import math
@@ -20,5 +23,4 @@ print max
 
 print '-----------------'
 
-endtime = datetime.datetime.now()
-print('All spent '+str((endtime-starttime).microseconds)+' microseconds')
+print (edu.time()-ts0)

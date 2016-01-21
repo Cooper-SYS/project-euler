@@ -1,10 +1,9 @@
-#! D:/Python27/python.exe
 # coding:utf-8
-'''
-Created on 2013年8月9日
-971
-@author: Administrator
-'''
+from Euler import Euler
+edu = Euler()
+
+ts0 = edu.time()
+
 from math import sqrt
 import time
 start=time.time()
@@ -38,4 +37,4 @@ for x in range(1,1000):
         #print '--------%d--%d--------' % (x,leng)
     
 print '********%d**%d********' % (number,max)
-print time.time()-start
+print (edu.time()-ts0)

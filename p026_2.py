@@ -1,10 +1,9 @@
-#! D:/Python27/python.exe
 # coding:utf-8
-'''
-Created on 2013年8月9日
+from Euler import Euler
+edu = Euler()
 
-@author: Administrator
-'''
+ts0 = edu.time()
+
 import time
 start=time.time()
 def function(n):
@@ -26,5 +25,5 @@ for x in xrange(1,1000):
     if len>max:
         max=x
 print max
-print time.time()-start
+print (edu.time()-ts0)
 

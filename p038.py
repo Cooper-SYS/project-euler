@@ -1,4 +1,9 @@
 # coding:utf-8
+from Euler import Euler
+edu = Euler()
+
+ts0 = edu.time()
+
 '''
 Created on 2013-8-14
 N>=2
@@ -32,4 +37,4 @@ while ini<9876:
     ini+=1
 
 print max
-print time.time()-start
+print (edu.time()-ts0)

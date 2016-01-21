@@ -1,4 +1,9 @@
 # coding:utf-8
+from Euler import Euler
+edu = Euler()
+
+ts0 = edu.time()
+
 '''
 Created on 2013-8-8
 对表格从右下角向左上角依次累积
@@ -20,3 +25,4 @@ for y in range(19,-1,-1):
 # for x in list:
 #     print x
 print list[0][0]
+print (edu.time()-ts0)

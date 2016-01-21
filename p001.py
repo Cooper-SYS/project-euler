@@ -1,10 +1,10 @@
 # coding:utf-8
-'''
-Created on 2013-8-7
+from Euler import Euler
+edu = Euler()
 
-@author: zhaoliang
-'''
-def test(max):
+ts0 = edu.time()
+
+def p001(max):
     num=0
     for x in range(3,max,3):
         num+=x
@@ -15,4 +15,8 @@ def test(max):
         
     return num
 
-print test(1000)
+print p001(1000)
+print edu.time()-ts0
+
+
+

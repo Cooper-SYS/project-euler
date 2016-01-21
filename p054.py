@@ -1,6 +1,9 @@
-#coding=utf-8
-#!/usr/bin/python
-#python2.7.8
+# coding:utf-8
+from Euler import Euler
+edu = Euler()
+
+ts0 = edu.time()
+
 from __future__ import division
 import datetime
 import math
@@ -237,5 +240,4 @@ for i in range(0,len(score)):
 print player1Wons
 print player2Wons
   
-endtime = datetime.datetime.now()
-print('All spent '+str((endtime-starttime).seconds)+' seconds')
+print (edu.time()-ts0)

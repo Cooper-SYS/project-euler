@@ -1,16 +1,16 @@
 # coding:utf-8
-'''
-Created on 2013-8-7
+from Euler import Euler
+edu = Euler()
 
-@author: zhaoliang
-'''
+ts0 = edu.time()
+
 def mini(a,b,sta):
     if a%b==0:
         return a
     else: 
         return mini(a+sta,b,sta)
 
-def start(list):
+def p005(list):
     sum=[]
     if len(list)%2==1:
         list.append(1)
@@ -21,11 +21,14 @@ def start(list):
     if len(sum)==1:
         return sum
     else:
-        return start(sum)
+        return p005(sum)
 
 init=[]
 for x in range(20,0,-1):
     init.append(x)
 
-result=start(init)  
+result=p005(init)  
 print result
+
+
+print (edu.time()-ts0)

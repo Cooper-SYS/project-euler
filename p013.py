@@ -1,10 +1,9 @@
-#! D:/Python27/python.exe
 # coding:utf-8
-'''
-Created on 2013年8月8日
+from Euler import Euler
+edu = Euler()
 
-@author: Administrator
-'''
+ts0 = edu.time()
+
 list=[]
 list.append(37107287533902102798797998220837590246510135740250)
 list.append(46376937677490009712648124896970078050417018260538)
@@ -111,3 +110,5 @@ for x in list:
     sum+=x/1000000000000000000000000000000000000000
     
 print sum
+
+print (edu.time()-ts0)

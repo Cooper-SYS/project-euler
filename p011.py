@@ -1,9 +1,9 @@
 # coding:utf-8
-'''
-Created on 2013-8-7
+from Euler import Euler
+edu = Euler()
 
-@author: zhaoliang
-'''
+ts0 = edu.time()
+
 list=[]
 list.append((8,2,22,97,38,15,0,40,0,75,4,5,7,78,52,12,50,77,91,8))
 list.append((49,49,99,40,17,81,18,57,60,87,17,40,98,43,69,48,4,56,62,0))
@@ -85,3 +85,5 @@ print str(a)+' '+str(list[a[0]][a[1]])
 print str(b)+' '+str(list[b[0]][b[1]])
 print str(c)+' '+str(list[c[0]][c[1]])
 print str(d)+' '+str(list[d[0]][d[1]])
+
+print (edu.time()-ts0)

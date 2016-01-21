@@ -1,9 +1,9 @@
 # coding:utf-8
-'''
-Created on 2013-8-13
+from Euler import Euler
+edu = Euler()
 
-@author: zhaoliang
-'''
+ts0 = edu.time()
+
 list=[]
 for x in range(2,101):
     for y in range(2,101):
@@ -12,3 +12,4 @@ for x in range(2,101):
             print '%d**%d=%d' % (x,y,x**y)
             
 print len(list)
+print (edu.time()-ts0)

@@ -1,9 +1,10 @@
 # coding:utf-8
-'''
-Created on 2013-8-8
+# coding:utf-8
+from Euler import Euler
+edu = Euler()
 
-@author: zhaoliang
-'''
+ts0 = edu.time()
+
 
 # num1to9=3+3+5+4+4+3+5+6+4
 # num11to19=6+6+8+8+7+7+9+8+8
@@ -119,3 +120,4 @@ for x in range(1,1000):
     sum+=len(pro)
     
 print sum
+print (edu.time()-ts0)

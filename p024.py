@@ -1,4 +1,9 @@
 # coding:utf-8
+from Euler import Euler
+edu = Euler()
+
+ts0 = edu.time()
+
 '''
 Created on 2013-8-9
 2783915460
@@ -73,3 +78,6 @@ for x1 in tmp1:
                                         if count>1000000:
                                             sys.exit(0)
                                         
+                                        
+                                        
+print (edu.time()-ts0)

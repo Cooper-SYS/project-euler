@@ -1,6 +1,9 @@
-#coding=utf-8
-#!/usr/bin/python
-#python2.7.8
+# coding:utf-8
+from Euler import Euler
+edu = Euler()
+
+ts0 = edu.time()
+
 
 import datetime
 import math
@@ -42,6 +45,6 @@ def p062():
                     
                     
 print p062()                    
-print('All spent '+str((datetime.datetime.now()-starttime).seconds)+' seconds') 
+print (edu.time()-ts0)
 
 

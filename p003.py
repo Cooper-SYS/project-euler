@@ -1,11 +1,10 @@
 # coding:utf-8
-'''
-Created on 2013-8-7
-
-@author: zhaoliang
-'''
+from Euler import Euler
 from math import sqrt
-import time
+edu = Euler()
+
+ts0 = edu.time()
+
 def fact():
     max=600851475143
     ret=[]
@@ -17,7 +16,7 @@ def fact():
         x+=1    
     return ret
 
-def fact2(ret):
+def p003(ret):
     print ret
     ret2=[]
     for x in ret:
@@ -34,6 +33,7 @@ def fact2(ret):
                 
     return ret2
                 
-time1=time.time()  
-print fact2(fact())
-print (time.time()-time1)
+  
+print p003(fact())
+
+print (edu.time()-ts0)

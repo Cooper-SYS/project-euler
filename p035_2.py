@@ -1,10 +1,9 @@
-#! D:/Python27/python.exe
 # coding:utf-8
-'''
-Created on 2013年8月13日
+from Euler import Euler
+edu = Euler()
 
-@author: Administrator
-'''
+ts0 = edu.time()
+
 from math import sqrt
 import time
 list=set()
@@ -39,4 +38,4 @@ for x in list:
     if isRecycle(x):
         count+=1
 print count
-print time.time()-start
+print (edu.time()-ts0)

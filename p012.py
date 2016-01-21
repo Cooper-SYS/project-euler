@@ -1,10 +1,9 @@
-#! D:/Python27/python.exe
 # coding:utf-8
-'''
-Created on 2013年8月7日
+from Euler import Euler
+edu = Euler()
 
-@author: Administrator
-'''
+ts0 = edu.time()
+
 from math import sqrt
 import time
 start=time.time()
@@ -23,4 +22,4 @@ while True:
         break
     
 print num
-print time.time()-start
+print (edu.time()-ts0)

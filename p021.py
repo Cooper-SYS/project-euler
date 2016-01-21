@@ -1,9 +1,9 @@
 # coding:utf-8
-'''
-Created on 2013-8-8
+from Euler import Euler
+edu = Euler()
 
-@author: zhaoliang
-'''
+ts0 = edu.time()
+
 from math import sqrt
 import time
 def divi(number):
@@ -30,4 +30,4 @@ for x in list:
 
 print list
 print count
-print time.time()-start
+print (edu.time()-ts0)

@@ -1,10 +1,9 @@
-#! D:/Python27/python.exe
 # coding:utf-8
-'''
-Created on 2013年8月9日
+from Euler import Euler
+edu = Euler()
 
-@author: Administrator
-'''
+ts0 = edu.time()
+
 pre=1
 next=1
 count=0
@@ -17,3 +16,4 @@ while len(str(next))<1000:
     print str(index)+':'+str(next)
     
 print index
+print (edu.time()-ts0)

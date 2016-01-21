@@ -1,4 +1,9 @@
 # coding:utf-8
+from Euler import Euler
+edu = Euler()
+
+ts0 = edu.time()
+
 '''
 Created on 2013-8-14
 这个是我自己的方式
@@ -29,5 +34,4 @@ for x in xrange(0,1000):
         number=x
         
 print number
-print times
-print time.time()-start  
+print (edu.time()-ts0)

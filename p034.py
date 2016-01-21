@@ -1,4 +1,9 @@
 # coding:utf-8
+from Euler import Euler
+edu = Euler()
+
+ts0 = edu.time()
+
 '''
 Created on 2013-8-13
 若n的位全为9，位数则不超过7；
@@ -26,6 +31,6 @@ for n in range(3,362880*9+1):
     
     
 print num
-print time.time()-start
+print (edu.time()-ts0)
 
     
